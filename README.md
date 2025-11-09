@@ -23,6 +23,8 @@ that gives players a **GUI-based portable inventory** — simple, clean, and ser
 | `/backpack reload` | Reloads plugin data (if needed in future) |
 
 ---
+![Demo GIF](https://kanker.website/content/cdn/gmcezmkuCsaO.gif)
+
 
 ## 💾 Data Storage
 
