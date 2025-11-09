@@ -9,7 +9,7 @@ that gives players a **GUI-based portable inventory** — simple, clean, and ser
 
 ✅ **Open Anywhere** — players can use `/bp` or `/backpack` to open their backpack GUI  
 ✅ **Customizable Sizes** — easily change how many slots backpacks have  
-✅ **Persistent Storage** — items stay safe even after restarts or reloads  
+✅ **Persistent Storage** — items stay safe even after restarts or reloads   
 ✅ **Configurable GUI Titles & Items** — match your server’s theme and style  
 ✅ **Optimized for Performance** — built specifically for the **Paper 1.21.10 API**  
 ⚡ **Coming Soon:** Permissions support to control who can use or access backpacks  
