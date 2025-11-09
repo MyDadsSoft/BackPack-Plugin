@@ -8,11 +8,9 @@ that gives players a **GUI-based portable inventory** — simple, clean, and ser
 ## 🧩 Features
 
 ✅ **Open Anywhere** — players can use `/bp` or `/backpack` to open their backpack GUI  
-✅ **Customizable Sizes** — easily change how many slots backpacks have  
-✅ **Persistent Storage** — items stay safe even after restarts or reloads   
-✅ **Configurable GUI Titles & Items** — match your server’s theme and style  
-✅ **Optimized for Performance** — built specifically for the **Paper 1.21.10 API**  
-⚡ **Coming Soon:** Permissions support to control who can use or access backpacks  
+✅ **Persistent Storage** — items are saved per player even after restarts  
+✅ **Custom GUI** — shows a player-friendly inventory window  
+⚡ **Coming Soon:** Permissions support and `/backpack give` command  
 
 ---
 
@@ -22,23 +20,28 @@ that gives players a **GUI-based portable inventory** — simple, clean, and ser
 |----------|-------------|
 | `/bp` | Opens your backpack GUI |
 | `/backpack` | Same as `/bp` — opens your backpack |
-| `/backpack reload` | Reloads the plugin configuration # Coming soon |
+| `/backpack reload` | Reloads plugin data (if needed in future) |
 
 ---
 
-## ⚙️ Configuration Example
+## 💾 Data Storage
+
+Backpacks are stored per player using their **UUID** as the key in a YAML file.  
+
+Example of saved data:
 
 ```yaml
-# config.yml
-
-backpack:
-  size: 27              # Number of slots (9, 18, 27, 36, 45, 54)
-  title: "&6Your Backpack"
-  open-sound: "BLOCK_CHEST_OPEN"
-  save-on-close: true
-  item:
-    material: "CHEST"
-    name: "&eBackpack"
-    lore:
-      - "&7Right-click to open your backpack"
-      - "&7or type &f/bp"
+60ec0ccb-0a4a-45d0-aae7-7b49c5da839d:
+  contents:
+    - id: minecraft:sticky_piston
+      count: 64
+    - id: minecraft:tnt
+      count: 64
+    - id: minecraft:totem_of_undying
+      count: 1
+    - null
+    - null
+    - id: minecraft:iron_shovel
+      count: 1
+      damage: 135
+    # ... more items ...
