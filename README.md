@@ -20,7 +20,7 @@ that gives players a **GUI-based portable inventory** — simple, clean, and ser
 |----------|-------------|
 | `/bp` | Opens your backpack GUI |
 | `/backpack` | Same as `/bp` — opens your backpack |
-| `/backpack reload` | Reloads plugin data (will be added later in the future) |
+| `/backpack reload` | Reloads plugin data (if needed in future) |
 
 ---
 
